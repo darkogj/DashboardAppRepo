@@ -10,7 +10,7 @@ namespace DashboardApp
     protected void Application_Start()
     {
       AreaRegistration.RegisterAllAreas();
-
+      BundleTable.EnableOptimizations = true;
       FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
       RouteConfig.RegisterRoutes(RouteTable.Routes);
       BundleConfig.RegisterBundles(BundleTable.Bundles);
